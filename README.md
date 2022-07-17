@@ -1,64 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+#Ecommerce
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a simple ecommerce website created in laravel.
 
-## About Laravel
+This application has an admin and users.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Here is the link for a live demo https://leord-ecommerce.herokuapp.com/ .
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+These are the things that the USER can do.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. Everyone will be initially routed to this landing page.
 
-## Learning Laravel
+![landing_page](https://user-images.githubusercontent.com/101245948/179395687-a45d91e5-f72a-40d0-9e14-ee0a6d4b69d9.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2. In the landing page, the user can view the products the company is selling. If they want to buy they need to create an account first and login.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3.  Once login, the user can now buy products by clicking add to cart. 
 
-## Laravel Sponsors
+4. The user can see the number of items added to the cart. If they need to see the more details or complete their order. They need to click the cart tab in the navigation bar.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![products](https://user-images.githubusercontent.com/101245948/179396013-40e295c5-48b4-4588-9877-a48cc9439863.png)
 
-### Premium Partners
+5. If the user is ready to complete the order they just need to click complete order.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![complete_order](https://user-images.githubusercontent.com/101245948/179396107-51ba6a2b-bece-439f-940b-2f24af7512c8.png)
 
-## Contributing
+These are the things an ADMIN can do.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. If you want to login as an admin in the live demo these are the credentials. email = admin@gmail.com password = 123456789
 
-## Code of Conduct
+2. As an admin you can add a new product in the add products tab.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![add_product](https://user-images.githubusercontent.com/101245948/179396302-879200b1-ea44-41e5-947b-c6b97c7e359b.png)
 
-## Security Vulnerabilities
+3. You can also update or delete all products you added under show all products tab.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![crud_product](https://user-images.githubusercontent.com/101245948/179396378-55f484c9-8528-4bdd-8167-c47ada2aa8f1.png)
 
-## License
+4. If there are orders, you need to go to order page and click deliver to complete the process.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![deliver](https://user-images.githubusercontent.com/101245948/179396495-29061a11-70e4-488f-b796-fb99dabb9ab0.png)
+
+
+
