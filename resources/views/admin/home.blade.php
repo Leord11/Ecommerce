@@ -6,10 +6,10 @@
   <body>
     @include('admin.sidebar')
       <!-- partial -->
-      @include('admin.navbar')
+    @include('admin.navbar')
         <!-- partial -->
-        @include('admin.body')
+    @include('admin.body')
           <!-- partial -->
-        @include('admin.script')
+    @include('admin.script')
   </body>
 </html>

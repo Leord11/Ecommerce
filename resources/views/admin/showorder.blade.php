@@ -23,12 +23,14 @@
             </div>    
 @endif
 
+
             <table>
                 <tr style="background: black;">
                     <td style="padding:20px;">Customer Name</td>
                     <td style="padding:20px;">Phone</td>
                     <td style="padding:20px;">Address</td>
                     <td style="padding:20px;">Product title</td>
+                    <td style="padding:20px;">Product Image</td>
                     <td style="padding:20px;">Price</td>
                     <td style="padding:20px;">Quantity</td>
                     <td style="padding:20px;">Status</td>
@@ -40,6 +42,7 @@
                     <td style="padding:20px">{{ $orders->phone }}</td>   
                     <td style="padding:20px">{{ $orders->address }}</td>   
                     <td style="padding:20px">{{ $orders->product_name }}</td>   
+                    <td style="padding:20px"><img src="productimage/{{ $orders->image }}" style="width:200px; height:150px; object-fit: contain;"alt=""></td>   
                     <td style="padding:20px">{{ $orders->price }}</td>   
                     <td style="padding:20px">{{ $orders->quantity }}</td>   
                     <td style="padding:20px">{{ $orders->status }}</td>    

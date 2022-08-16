@@ -68,7 +68,7 @@ https://templatemo.com/tm-546-sixteen-clothing
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="{{url('/')}}">Home
                   <span class="sr-only">(current)</span>
                 </a>
@@ -86,10 +86,10 @@ https://templatemo.com/tm-546-sixteen-clothing
                 
                     @auth
                     <li class="nav-item">
-                <a class="nav-link" href="{{url('showcart')}}">
-                <i class="fa-solid fa-cart-shopping"></i> 
-                Cart[{{ $count }}]</a>
-              </li>
+                      <a class="nav-link" href="{{url('showcart')}}">
+                      <i class="fa-solid fa-cart-shopping"></i> 
+                      Cart[{{ $count }}]</a>
+                    </li>
 
                     <x-app-layout>
 
