@@ -120,8 +120,9 @@ https://templatemo.com/tm-546-sixteen-clothing
     </a> 
     </div>    
     @endif
-        <table style="border:1px solid #272525;">
+        <table style="border:1px solid #272525; width:100%;">
             <tr style="background-color: #272525; color:white; border:1px solid #272525;"> 
+                <td style="padding:10px; font-size:20px;">Image</td>
                 <td style="padding:10px; font-size:20px;">Product Name</td>
                 <td style="padding:10px; font-size:20px;">Quantity</td>
                 <td style="padding:10px; font-size:20px;">Price</td>
@@ -133,6 +134,10 @@ https://templatemo.com/tm-546-sixteen-clothing
         @csrf
             @foreach($cart as $carts)
             <tr style="border:1px solid #272525;">
+                <td style="padding:10px;">
+                <input type="text" name="productimage[]" value="{{ $carts->image}}" hidden="">
+                <img src="productimage/{{ $carts->image }}" style="width:150px; height:100px; object-fit: contain;"alt="">
+                </td>  
                 <td style="padding:10px;">
                 <input type="text" name="productname[]" value="{{ $carts->product_title}}" hidden="">
                 {{ $carts->product_title}}

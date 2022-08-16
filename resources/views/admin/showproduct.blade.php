@@ -29,7 +29,7 @@
                     <td style="padding:20px;">Description</td>
                     <td style="padding:20px;">Quantity</td>
                     <td style="padding:20px;">Price</td>
-                    <td style="padding:20px;">Image</td>
+                    <td style="padding:20px;">Product Image</td>
                     <td style="padding:20px;">Update</td>
                     <td style="padding:20px;">Delete</td>
                 </tr>

@@ -57,17 +57,26 @@ class HomeController extends Controller
         $search = $request->search;
 
 
-        if($search == '') {
-            $data = product::paginate(3);
+        if($search == '' && !Auth::id()) {
+            $data = Product::paginate(3);
 
             return view('user.home',compact('data'));
         }
         $data = product::where('title','Like','%'.$search.'%')->get();
 
         if(Auth::id()) { 
+            
             $user = auth()->user();
 
             $count = cart::where('phone',$user->phone)->count();
+
+            if($search == '') {
+                $data = Product::paginate(3);
+                
+                return view('user.home', compact('data','count'));
+            }
+
+            
 
             return view('user.home', compact('data','count'));
         
@@ -97,6 +106,8 @@ class HomeController extends Controller
             $cart->price = $product->price;
 
             $cart->quantity = $request->quantity;
+
+            $cart->image = $product->image;
 
             $cart->save();
 
@@ -140,6 +151,8 @@ class HomeController extends Controller
             $order = new order;
 
             $order->product_name = $request->productname[$key];
+
+            $order->image = $request->productimage[$key];
 
             $order->price = $request->price[$key];
 
